@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #18212f;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #18212f;
+}
+
+.nav-btn {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+
+    min-height: 500px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.hero-content {
+    flex-grow: 1;
+}
+
+.hero-small {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+
+    max-width: 650px;
+
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 550px;
+
+    line-height: 1.7;
+
+    color: #687386;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #18212f;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+}
+
+.hero-card {
+    width: 350px;
+    height: 350px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #dce6f5;
+
+    border-radius: 30px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background-color: #18212f;
+}
+
+.hero-card h2 {
+    font-size: 40px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section {
+    padding: 100px 5%;
+}
+
+.section-header {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 60px;
+}
+
+.section-header span,
+.services-text span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-header h2,
+.services-text h2 {
+    font-size: 40px;
+
+    margin: 15px 0;
+}
+
+.section-header p,
+.services-text p {
+    color: #687386;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    background-color: white;
+}
+
+.feature-container {
+    max-width: 1200px;
+
+    min-height: 500px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-content: center;
+
+    justify-content: center;
+
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.feature-card {
+    width: 270px;
+    min-height: 230px;
+
+    padding: 30px;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.feature-card .icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #18212f;
+
+    color: white;
+
+    border-radius: 10px;
+}
+
+.feature-card p {
+    color: #687386;
+
+    line-height: 1.6;
+}
+
+
+/*
+   order example
+*/
+
+.special-card {
+    order: 1;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.services-text {
+    flex-grow: 1;
+}
+
+.services-list {
+    flex-grow: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.service-item {
+    min-height: 80px;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #d9dee6;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.service-item span {
+    font-weight: bold;
+}
+
+.service-item h3 {
+    flex-grow: 1;
+}
+
+
+/*
+   align-self example
+*/
+
+.service-item:nth-child(2) {
+    align-self: flex-start;
+}
+
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing {
+    background-color: white;
+}
+
+.pricing-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+}
+
+.price-card {
+    width: 300px;
+
+    min-height: 350px;
+
+    padding: 35px;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.price-card .price {
+    font-size: 40px;
+
+    font-weight: bold;
+}
+
+.price-card .price span {
+    font-size: 14px;
+
+    color: #687386;
+}
+
+.price-card p {
+    color: #687386;
+
+    flex-grow: 1;
+}
+
+.price-card button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.popular {
+    border: 2px solid #18212f;
+
+    position: relative;
+}
+
+.popular-label {
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    max-width: 1100px;
+
+    margin: 80px auto;
+
+    padding: 60px;
+
+    background-color: #18212f;
+
+    color: white;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.cta h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.cta p {
+    opacity: 0.7;
+}
+
+.cta button {
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    min-height: 100px;
+
+    padding: 30px 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer-logo {
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+
+    color: #18212f;
+}
+
+footer p {
+    color: #687386;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding: 20px 0;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .cta {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+}
